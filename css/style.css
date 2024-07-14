@@ -1,0 +1,86 @@
+/* *COMMON CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: arial;
+}
+
+/* *COMMON CSS END */
+
+/* NAVBAR */
+nav{
+    background: #FF5F6D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+text-align: center;
+padding: 5px 0;
+    
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    color: white;
+    
+    padding: 12px 20px;
+    display: block;
+    margin: 0 8px;
+}
+
+nav ul li .active{
+    background-color: rgba(250, 244, 244, 0.747);
+
+}
+nav ul li:hover a{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav ul li .submenu{
+    position: absolute;
+    border: 1px solid #aaa;
+    background-color: #ebd9d9; 
+    transition: 0.6s;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 50px;
+    
+}
+
+nav ul li .submenu li{
+    display: block;
+    border-bottom: 1px solid #aaa;
+}
+
+nav ul li .submenu li a{
+    color: #000;
+    transition: 0.25s;
+    display: block;
+}
+
+nav ul li:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+
+}
+
+nav ul li .submenu li:hover a{
+    margin-left: 26px;
+}
+
+
+/* NAVBAR END */
